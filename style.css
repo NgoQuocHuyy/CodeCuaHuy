@@ -1,0 +1,211 @@
+/* Cú pháp CSS:
+    selector{
+        property: value} */
+/* SELECTOR: Bộ chọn phần tử */
+/* -Tag: p, h, div, span,... */
+/* - Universal selector: Áp dụng cho tất cả trong body
+   - Child selector
+   - Descendent selector: Chọn theo con của selector
+   - Class: .class-name
+   - ID: #id-name
+   - Attribute: [attribute]
+   - Pseudo-class: :hover, :active, :focus,...
+   -Pseudo-element: :before, :after,... */
+/* * {
+    color: red;
+    border: 1px solid blue;
+} */
+/* div h1 { -> Descendent
+    color: red;
+} */
+/* : h1 là con trực tiếp của div - Child selector*/
+/* div>h1 {
+    color: red;
+} */
+/* .odd { -class
+    color: red;
+}
+
+.even {
+    color: blue;
+} */
+/* #big-text { - ID
+    color: yellow;
+} */
+/* FONT */
+/* p {
+    font-family: "Poppins";
+    font-style: italic;
+    text-decoration: underline;
+} */
+/* body {
+    background: linear-gradient(red, blue);
+    background-attachment: fixed;
+} */
+/* Margin, Border, Padding */
+/* .out {
+    width: 1000px;
+    height: 1000px;
+    background-color: yellow;
+    border: 5px solid red;
+    padding: 30px;
+}
+
+.in {
+    width: 500px;
+    height: 500x;
+    background-color: green;
+    border: 5px solid red;
+    margin: 0px auto;
+    padding: 100px;
+    border-radius: 20px;
+} */
+/* BACKGROUND */
+/* .out {
+    width: 1000px;
+    height: 1000px;
+    padding: 30px;
+    background-image: url(Huy.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.in {
+    width: 500px;
+    height: 500x;
+    border: 5px solid red;
+    border-radius: 50px;
+} */
+/* POSITION */
+/* - Static: mặc định (không sử dụng đc thuộc tính top) 
+- Relative: tương đối 
+- Absolute: tuyệt đối 
+- fixed: cố định
+- sticky: dính */
+/* h1 {
+    border: 1px solid black;
+} */
+
+/* .a {
+    position: relative;
+    top: 15px;
+    right: 15px;
+} */
+/* .container {
+    width: 700px;
+    height: 700px;
+    background-color: yellow;
+}
+
+.item {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    position: relative;
+    top: 10px;
+} */
+/* DISPLAY, FLEX BOX */
+/* .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+} */
+
+
+/* .item {
+    width: 100px;
+    background-color: yellow;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+} */
+
+/* PSEUDOCLASS: LỚP GIẢ */
+/* h1 {
+    color: black;
+}
+
+h1 :hover {
+    color: red;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a :hover {
+    background-color: blue;
+}
+
+a :visited {
+    color: pink;
+} */
+/* RESPONSIVE DESIGN */
+/* .container {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.item {
+    width: 100px;
+    background-color: yellow;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+} */
+
+/* Break point */
+.container {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.item {
+    width: 100px;
+    background-color: yellow;
+    height: 100px;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        background-color: red;
+    }
+
+    .container {
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .item {
+        background-color: blue;
+    }
+
+    .container {
+        background-color: white;
+    }
+}
